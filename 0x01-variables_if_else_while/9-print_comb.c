@@ -9,17 +9,18 @@
 int main(void)
 {
 
-	char c;
+	int c;
 
-	for (c = '0'; c < '9'; c++){	
-		putchar(c);
-		putchar(',');
-		putchar(' ');
+	for (c = 0; c <= 9; c++)
+	{	
+		putchar(c + '0');
+		if (c != 9)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
-	
-	putchar('9');
 	putchar('\n');
-
 	return (0);
-}
 
+}

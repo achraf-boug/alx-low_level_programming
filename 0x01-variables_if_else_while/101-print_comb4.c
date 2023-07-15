@@ -6,17 +6,22 @@
  *
  * Return: Always 0.
  */
-int main(void) {
+int main(void)
+{
 
-	char c,s,k;
+	int c, s, k;
 
-	for(c = '0'; c <= '7'; c++) {
-		for(s = (char)(c + 1); s <= '8'; s++) {
-			for(k = (char) (s+1); k <= '9'; k++){
-				putchar(c);
-				putchar(s);
-				putchar(k);
-				if (c != '7') {
+	for (c = 0; c <= 7; c++)
+	{
+		for (s = c + 1; s <= 8; s++)
+		{
+			for (k = s + 1; k <= 9; k++)
+			{
+				putchar(c + '0');
+				putchar(s +'0');
+				putchar(k + '0');
+				if (c != 7)
+				{
 					putchar(',');
 					putchar(' ');
 				}
@@ -26,4 +31,3 @@ int main(void) {
 	putchar('\n');
 	return (0);
 }
-
