@@ -9,13 +9,14 @@
 int main(void)
 {
 
-	for (char c = '0'; c < '9'; c++){	
+	char c;
+	for (c = '0'; c < '9'; c++){	
 		putchar(c);
-      		putchar(',');
-      		putchar(' ');
+		putchar(',');
+		putchar(' ');
 	}
-    	
-  	putchar('9');
+	
+	putchar('9');
 	putchar('\n');
 
 	return 0;
