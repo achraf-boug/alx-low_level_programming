@@ -9,6 +9,7 @@
 int main(void) {
 
 	char c,s,k;
+
 	for(c = '0'; c <= '7'; c++) {
 		for(s = (char)(c + 1); s <= '8'; s++) {
 			for(k = (char) (s+1); k <= '9'; k++){
