@@ -18,7 +18,7 @@ int main(void)
 			for (k = s + 1; k <= 9; k++)
 			{
 				putchar(c + '0');
-				putchar(s +'0');
+				putchar(s + '0');
 				putchar(k + '0');
 				if (c != 7)
 				{
