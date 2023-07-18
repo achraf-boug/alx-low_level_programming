@@ -8,16 +8,17 @@
 void print_to_98(int n)
 {
 	int a;
-	if (n>98)
+
+	if(n > 98)
 		a = -1;
 	else
 		a = 1;
-	
-	while(n!= 98)
+
+	while (n != 98)
 	{
-		printf("%d, ",n);
-		n+=a;
+		printf("%d, ", n);
+		n += a;
 	}
-	printf("%d",98);
+	printf("%d\n", 98);
 }
 
