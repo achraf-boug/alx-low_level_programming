@@ -9,7 +9,7 @@
 int main(void)
 {
 	long prev = 1, last = 1, sum = 0, sumeven = 0;
-	
+
 	while (sum < 4000000)
 	{
 		sum = last + prev;
