@@ -9,14 +9,14 @@
 int main(void)
 {
 	long a, prev = 1, last = 1, sum = 0;
-	
-	printf("%d, ",1);
+
+	printf("%d, ", 1);
 	for (a = 1; a < 49; a++)
 	{
 		sum = last + prev;
 		prev = last;
 		last = sum;
-		printf("%ld, ",sum);
+		printf("%ld, ", sum);
 	}
 	printf("%ld\n", last + prev);
 

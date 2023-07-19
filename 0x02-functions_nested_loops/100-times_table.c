@@ -32,5 +32,6 @@ void print_times_table(int n)
 			putchar((a * b) % 10 + '0');
 		}
 		putchar('\n');
+	}
 }
 
