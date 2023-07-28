@@ -6,16 +6,16 @@
  */
 char *string_toupper(char *str)
 {
-    int i;
-    int c;
+	int i;
+	int c;
 
-    for (i = 0; str[i] != '\0'; i++)
-    {
-        c = (int) str[i];
-        if (c < 97 | c > 122)
-            continue;
-        str[i] = (char) (c - 32);
-    }
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		c = (int) str[i];
+		if ((c < 97) | (c > 122))
+			continue;
+		str[i] = (char) (c - 32);
+	}
 
-    return str;
+	return (str);
 }
