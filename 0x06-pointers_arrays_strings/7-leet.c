@@ -10,18 +10,13 @@ char *leet(char *str)
 	char c[] = "4433007711";
 	int i, j = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; str[i]; i++)
 	{
-		while (s[j] != '\0')
+		for (j = 0; j <= 9; j++)
 		{
-			if (str[i] == s[j])
-			{
+			if (s[j] == str[i])
 				str[i] = c[j];
-				break;
-			}
 		}
-		j = 0;
 	}
-
 	return (str);
 }
