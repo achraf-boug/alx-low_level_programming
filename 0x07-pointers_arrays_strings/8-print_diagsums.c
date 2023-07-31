@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_diagsums - prints og two diagonal of a square
  * @a: pointer to array
