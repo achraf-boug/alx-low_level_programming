@@ -1,5 +1,6 @@
 #include "main.h"
-/**atoi - empty function
+/**
+ * _atoi - empty function
  * @s: string
  * Return: int
  */
