@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 	op = argv[2];
 	b = atoi(argv[3]);
 
-	if ((*op == '/' || *op == '%') && b == 0)
+	if ((op[0] == '/' || op[0] == '%') && b == 0)
 	{
 		printf("Error");
 		exit(100);
