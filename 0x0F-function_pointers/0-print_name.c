@@ -13,5 +13,5 @@ void print_name(char *name, void (*f)(char *))
 	f(name);
 	for (i = 0; name[i] != '\0'; i++)
 		_putchar(name[i]);
-	_putchar('\0');
+	_putchar('\n');
 }
