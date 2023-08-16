@@ -1,4 +1,4 @@
-#include "calc.h"
+#include "3-calc.h"
 
 /**
  * main - Prints the result of simple operations.
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 
 	a = atoi(argv[1]);
 	op = argv[2];
-	b = argv[3];
+	b = atoi(argv[3]);
 
 	if ((*op == '/' || *op == '%') && b == 0)
 	{
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	printf("%d\n", get_op_func(op)(num1, num2));
+	printf("%d\n", get_op_func(op)(a, b));
 
 	return (0);
 }
