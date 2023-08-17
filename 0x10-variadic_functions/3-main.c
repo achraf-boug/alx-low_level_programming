@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	print_all("", 'B', 3, "stSchool");
+	print_all(NULL, 'B', 3, "stSchool");
 	return (0);
 }
