@@ -7,10 +7,9 @@
  */
 void print_all(const char * const format, ...)
 {
-	int i = 0;
+	int i = 0, flag;
 	char *str;
 	va_list list;
-	int flag = 0;
 
 	va_start(list, format);
 	while (format[i] != '\0' && format != NULL)
@@ -33,20 +32,15 @@ void print_all(const char * const format, ...)
 				flag = 0;
 				str = va_arg(list, char *);
 				if (str == NULL)
-				{
 					printf("(nil)");
-					break;
-				}
 				printf("%s", str);
 				break;
 			default:
 				flag = 1;
 				break;
 		}
-
-		if (flag == 0 && format[i+1] != '\0')
+		if (flag == 0 && format[i + 1] != '\0')
 			printf(", ");
-
 		i++;
 	}
 	printf("\n");
