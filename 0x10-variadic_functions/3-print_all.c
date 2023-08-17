@@ -25,14 +25,14 @@ void print_all(const char * const format, ...)
 				flag = 0;
 				break;
 			case 'f':
-				printf("%f", (float) va_arg(list, double));
+				printf("%f", va_arg(list, double));
 				flag = 0;
 				break;
 			case 's':
 				flag = 0;
 				str = va_arg(list, char *);
 				if (str == NULL)
-					printf("(nil)");
+					str = "(nil)";
 				printf("%s", str);
 				break;
 			default:
