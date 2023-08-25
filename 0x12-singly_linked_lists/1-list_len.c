@@ -1,17 +1,18 @@
 #include "lists.h"
-
 /**
- * list_len - return the number of elements in a linked list
- * @h: linked list to mesure
- *
- * Return: return h lenght
+ * list_len - calculate the lenght of list_t list.
+ * @h: linked list.
+ * Return: lenght of list_t list.
  */
+
 size_t list_len(const list_t *h)
 {
-	size_t len = 0;
+	size_t nb_nodes = 0;
 
-	while (h->next)
-		len++;
-	return (len);
+	while (h != NULL)
+	{
+		h = h->next;
+		nb_nodes++;
+	}
+	return (nb_nodes);
 }
-
