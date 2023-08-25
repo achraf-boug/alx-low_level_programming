@@ -8,8 +8,7 @@
  */
 size_t print_list(const list_t *h)
 {
-	size_t nb_nodes = 0, i, len;
-	char *str;
+	size_t nb_nodes = 0;
 
 	while (h->next)
 	{
