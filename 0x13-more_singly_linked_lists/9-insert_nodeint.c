@@ -1,4 +1,4 @@
-include "lists.h"
+#include "lists.h"
 
 
 static listint_t *new_node(const int n);
@@ -64,3 +64,4 @@ static listint_t *new_node(const int n)
 	new->next = NULL;
 	return (new);
 }
+
